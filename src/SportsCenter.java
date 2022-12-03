@@ -179,28 +179,5 @@ public class SportsCenter {
 	}
 	
 	
-	private String scanExercise() {
-		int chooseNum;
-		String exercise = null;
-		boolean flag =true;
-		while(flag) {
-			flag = false;
-			System.out.println("1.수영, 2.골프, 3.요가, 4.필라테스, 5.헬스, 6.스쿼시");
-			chooseNum =scanner.nextInt();
-			switch(chooseNum) {
-			case 1: exercise="수영" ; break;
-			case 2: exercise="골프" ; break;
-			case 3: exercise="요가" ; break;
-			case 4: exercise="필라테스" ; break;
-			case 5: exercise="헬스" ; break;
-			case 6: exercise="스쿼시" ; break;
-			default:
-				System.out.println("잘 못 입력하셨습니다. ");
-				flag = true;
-			}
-		}
-		return exercise;
-	}
-	
 
 }
